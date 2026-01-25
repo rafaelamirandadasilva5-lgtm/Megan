@@ -176,11 +176,11 @@ body{
   <h3>ASSINATURA</h3>
 
   <button class="btn primary" onclick="openModal('29')">
-    ASSINAR • R$ 5,00
+    ASSINAR • R$ 10,00
   </button>
 
   <button class="btn outline" onclick="openModal('59')">
-    ASSINAR • R$ 10,00
+    ASSINAR • R$ 5,00
   </button>
 </div>
 
@@ -212,11 +212,11 @@ function openModal(plan){
   const link = document.getElementById("payLink");
 
   if(plan === '29'){
-    text.innerText = "Plano mensal • R$ 5,00";
-    link.href = "http://app.syncpayments.com.br/payment-link/a0e10c06-b1ba-4e30-b01e-7c71089a36cb";
-  } else {
-    text.innerText = "Plano VIP • R$ 10,00";
+    text.innerText = "Plano mensal • R$ 10,00";
     link.href = "http://app.syncpayments.com.br/payment-link/a0e10bb8-15e1-4b9f-85bb-f3789ca49ed5";
+  } else {
+    text.innerText = "Plano VIP • R$ 5,00";
+    link.href = "http://app.syncpayments.com.br/payment-link/a0e10c06-b1ba-4e30-b01e-7c71089a36cb";
   }
 
   modal.style.display = "flex";
@@ -229,4 +229,5 @@ function closeModal(){
 
 </body>
 </html>
+
 
